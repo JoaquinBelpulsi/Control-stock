@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>Control de stock</title>
+
+</head>
+
+<body>
+
+
+    <header class="row justify-content-center">
+        <div class="tit">
+        <div><h1>ALMACEN</h1></div> 
+        <div><h2>Belpulsi Joaquin 2022</h2></div>
+        </div>
+    </header>
+
+    <div class="row justify-content-center my-3">
+        <!-- FORM-->
+        <div class="col-4">
+            <div class="form-group d-flex justify-content-center">
+
+                <form id="formulario">
+
+                    <div class="form-control my-2">
+                        <label class="form-label d-flex justify-content-center" for="floatingPassword">Nombre del
+                            producto</label>
+                        <input id="nombre" name="nombre" class="form-control" type="text" value="" required>
+                    </div>
+
+                    <div class="form-control my-2">
+                        <label class="form-label d-flex justify-content-center">Stock</label>
+                        <input id="stock" name="stock" class="form-control" type="number" value="" required>
+                    </div>
+
+                    <div class="form-control my-2">
+                        <label class="form-label d-flex justify-content-center">Precio</label>
+                        <input id="precio" name="precio" class="form-control" type="text" value="$" min="0" required>
+                    </div>
+
+                    <div id="boton">
+                        <input class="btn btn-dark" type="submit" id="boton" value="AGREGAR">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <!--FIN FORM -->
+
+        <div class="col-1"></div>
+        <div class="col-4">
+            <table id="lista" class="table table-striped">
+                <tr class="head-light">
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Stock</th>
+                    <th>Precio</th>
+                    <th class="eliminar">ELIMINAR</th>
+                    <th class="cambiar">CAMBIAR</th>
+                </tr>
+            </table>
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+    </script>
+
+    <!--SWEET ALERT-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--JS-->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
