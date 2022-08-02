@@ -76,7 +76,6 @@
         DeleteButton.textContent = "Eliminar"
         DeleteCell.appendChild(DeleteButton)
 
-
         ChangeCell = NewRow.insertCell(5);
         ChangeButton = document.createElement("button");
         ChangeButton.textContent = "Cambiar"

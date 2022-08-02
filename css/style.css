@@ -10,14 +10,17 @@ header {
     background-color: rgb(255, 195, 128);
     border-bottom: solid 1px black;
 }
+
 .tit {
     display: flex;
     justify-content: space-around;
 }
+
 h1 {
     height: 10px;
     font-family: 'Oswald', sans-serif;
 }
+
 h2 {
     size: 10px;
     font-family: 'Oswald', sans-serif;
@@ -32,15 +35,13 @@ h2 {
     justify-content: center;
 }
 
-td > button {
+td>button {
     background-color: white;
     border-radius: 5px;
     border: 2px solid;
 }
 
-td > button:hover {
+td>button:hover {
     background-color: rgb(170, 170, 170);
     transition: 300ms;
 }
-
-
